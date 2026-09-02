@@ -1,0 +1,11 @@
+# full dev/training environment
+torch
+opencv-python-headless
+numpy
+fastapi
+uvicorn[standard]
+python-multipart
+mlflow
+dvc[s3]
+pytest
+httpx

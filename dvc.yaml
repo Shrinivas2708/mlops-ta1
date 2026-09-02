@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: python -m src.train --data data/raw/good --epochs 20 --out models/autoencoder.pt
+    deps:
+      - data/raw/good
+      - src/train.py
+      - src/model.py
+      - src/preprocess.py
+    outs:
+      - models/autoencoder.pt

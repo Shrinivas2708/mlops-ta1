@@ -1,0 +1,7 @@
+# minimal runtime for the edge container only
+torch
+opencv-python-headless
+numpy
+fastapi
+uvicorn[standard]
+python-multipart
