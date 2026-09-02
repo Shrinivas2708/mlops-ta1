@@ -1,0 +1,28 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python -m src.train --data data/raw/good --epochs 20 --out 
+      models/autoencoder.pt
+    deps:
+    - path: data/raw/good
+      hash: md5
+      md5: e978c5b3b02307b25879d3c016c597cf.dir
+      size: 8791013
+      nfiles: 200
+    - path: src/model.py
+      hash: md5
+      md5: d120fba0925c948923c7137a198f8a71
+      size: 2311
+    - path: src/preprocess.py
+      hash: md5
+      md5: e89c3d929c935c701cf8d1ef485d5ace
+      size: 1572
+    - path: src/train.py
+      hash: md5
+      md5: c3b79af6186cd3822d7536c88436842d
+      size: 3575
+    outs:
+    - path: models/autoencoder.pt
+      hash: md5
+      md5: d279b8f49715d657731da68ec665a733
+      size: 2789519
